@@ -43,14 +43,11 @@ a {
 
 /* End Css Reset */
 
-main {
-  padding: 10px 50px;
-}
-
+/* Start Nav */
 nav {
   display: flex;
   align-items: center;
-  position: fixed;
+  /* position: fixed; */
   justify-content: space-between;
   width: 100%;
   height: 60px;
@@ -65,9 +62,12 @@ nav {
   align-items: center;
 }
 
+nav a {
+  cursor: pointer;
+}
+
 .logo {
   display: flex;
-  cursor: pointer;
   align-items: center;
   gap: 10px;
   margin-right: 70px;
@@ -98,3 +98,52 @@ nav {
   border: 1px solid #101c45;
   padding: 8px 10px;
 }
+
+/* End Nav */
+
+/* Start Main */
+
+main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 100px;
+  margin-top: 40px;
+}
+
+.main-left {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 50%;
+  color: #101c45;
+  font-family: "DM Sans", sans-serif;
+  font-size: 16px;
+}
+
+.main-left .slogan {
+  font-size: 46px;
+  font-weight: 500;
+  letter-spacing: 0.025em;
+  word-spacing: 0.025em;
+}
+
+.main-left .description {
+  margin-bottom: 20px;
+}
+
+.main-left button {
+  width: fit-content;
+  cursor: pointer;
+  background: #203271;
+  padding: 15px 35px;
+  border: none;
+  color: white;
+  animation: 10s ease-in-out;
+}
+
+.main-left button:hover {
+  background: #13245c;
+}
+
+/* End Main */
